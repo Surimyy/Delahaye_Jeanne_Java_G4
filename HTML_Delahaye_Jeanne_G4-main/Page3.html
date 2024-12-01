@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Osu!Mania</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="m-20 libre-baskerville-regular font-size-x-large">
+    <Header class="d-flex align-items-center header" >
+        <nav> <!-- naviguation entre differentes pages du site-->
+            <ul class="d-flex align-items-center margin-top ">
+                <li>
+                    <a class="color-white tab tab-home tab-active " href="#">Home</a>
+                    <!-- lien entre l'index et l'index -> sert pas pour cette page mais quand l'utilisateur change de page il pourras l'utiliser pour revenir a l'index-->
+                </li>
+            
+                <li>
+                    <a class="color-white  tab tab-questionnaires" href="#">Questionnaire</a>
+                </li>
+
+            </ul>
+            <div class="content home active ">
+                <a href="Index.html">home</a>
+            </div>
+
+            <div class="content questionnaires ">
+                <a href="Questionnaire.html">Questionnaires</a>
+                <a href="Formulaire.html">Inscription</a>
+            </div>
+        </nav>
+  
+    <button class="color-white button" id="button"> Light Mode ON/OFF </button>
+
+</Header>
+
+    <Main>
+        <section class="bande align-items-center d-flex justify-content-center d-flex row-reverse">
+
+            <h1 class="color-white">Osu! Mania</h1>
+            <img src="Img/logo_osu.png" alt="logo osu" class="p-20" id="logo-osu">
+        </section>
+
+        <section class="d-flex flex-column gap-40">
+            <div class="d-flex flex-column gap-20">
+                <p>Ce mode de jeu ressemble a beaucoup d'autres jeu sur mobile mais , il est plus compliqué!
+                    <br><br>
+                    Tout d'abord, avant de commencer à jouer, il faut aller dans les paramètres, tout décocher les
+                    options
+                    ci-dessous
+                </p>
+                <img src="Img/MANIA/option.PNG" alt="image option a dechocher pour le mode mania" id="image"
+                    class="align-self-center">
+            </div>
+            <div class="d-flex flex-column gap-20">
+                <p>Voici à quoi ressemble l'interface de ce mode</p>
+                <img src="Img/MANIA/zone_jeu.jpg" alt="image zone de jeu d'Osu! Mania" id="image"
+                    class="align-self-center">
+                <p>En haut à droite, il y a le score et en dessous la précision <br><br>
+                    Au milieu , la grille de jeu ou les notes arrivent <br><br>
+                    Il y a <span> 2 types de notes </span>, les notes simples et les notes longues</p>
+                <div class="d-flex align-items-center justify-content-center ">
+                    <img src="Img/MANIA/note_simple_mania.png" alt="image note simple mania" id="note-courte"
+                        class="p-20">
+                    <img src="Img/MANIA/longue_note.png" alt="image longue note mania" id="note-longue" class="p-20">
+                </div>
+
+                <p> <span> Le but est simple :</span><br><br>
+                    -Pour les notes simples, il suffit de presser la touche qui correspond à la bonne colonne quand la
+                    note atteint la zone la plus basse <br><br>
+                    - Pour les longues notes, il suffit de presser la touche qui correspond à la colonne quand la note
+                    atteint la zone la plus basse, puis la relâcher à la fin de la note <br><br>
+                    Le score maximum dans ce mode de jeu est de 1 000 000 et la précision maximum, comme dans un
+                    standard, est de 100%.
+                    Pour atteindre le score et la précision max, les précisions <br><br>
+                    obtenues sur les notes ont plusieurs
+                    paliers, plus on est en rythme, plus la précision sera haute
+                </p>
+
+                <table> <!-- création d'un tableau pour présenter les scores-->
+                    <tr>
+                        <td>Parfait</td>
+                        <td>+- 16.5ms</td>
+                    </tr>
+                    <tr>
+                        <td>Exellent</td>
+                        <td>+- 40.5ms</td>
+                    </tr>
+                    <tr>
+                        <td>Très bien</td>
+                        <td>+- 73.5ms</td>
+                    </tr>
+                    <tr>
+                        <td>Bien</td>
+                        <td>+- 103.5ms</td>
+                    </tr>
+                    <tr>
+                        <td>Mauvais</td>
+                        <td>+- 127.5ms</td>
+                    </tr>
+                    <tr>
+                        <td>Raté</td>
+                        <td>Le reste</td>
+                    </tr>
+                </table>
+
+
+                <p><span>Dernier Tips</span><br><br>
+                    pour le confort au début du niveau vous pouvez appuyer sur f3 pour diminuer la vitesse et défilement
+                    des notes et sur f4 pour augmenter la vitesse
+
+                </p>
+
+            </div>
+        </section>
+
+
+
+
+    </Main>
+    <Footer>
+
+        <section class="d-flex p-20 flex-column color-white footer">
+            <h4 class="m-20">Les liens utiles</h4>
+            <a class="color-white-grey m-20" href="https://osu.ppy.sh/home/download"> Download Osu!</a>
+            <a class="color-white-grey m-20" href="https://osu.ppy.sh/beatmapsets"> Chercher des beatmaps pour Osu!</a>
+
+        </section>
+
+
+
+    </Footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

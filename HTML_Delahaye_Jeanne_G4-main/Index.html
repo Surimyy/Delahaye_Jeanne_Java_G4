@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre a joueur a Osu!</title>
+    <link rel="stylesheet" href="style.css"><!-- liaison entre css et index-->
+    <!--Delahaye Jeanne G4-->
+    <!-- https://github.com/Surimyy/HTML_Delahaye_Jeanne_G4.git -->
+    <!-- Mail PROF : web.start.contact@gmail.com -->
+    <link rel="icon" href="Img/logo_osu.png" type="image/png">
+    <!--pour mettre le logo d'osu dans la barre avec le nom du site-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet"> <!-- link pour ajouter une font -->
+</head>
+
+<!-- NE PAS OUBLIER  fil d'ariane-->
+
+<body id="light-mod" class="m-20 libre-baskerville-regular font-size-x-large color-white">
+    <!-- applique une marge a toute la page + une font pour toute la page  , et augmentation de la taille de toute les écriture (on retrouvera la emme chose sur toute les pages)-->
+    <Header class="d-flex align-items-center header" >
+            <nav> <!-- naviguation entre differentes pages du site-->
+                <ul class="d-flex align-items-center margin-top ">
+                    <li>
+                        <a class="tab tab-home tab-active " href="#">Home</a>
+                        <!-- lien entre l'index et l'index -> sert pas pour cette page mais quand l'utilisateur change de page il pourras l'utiliser pour revenir a l'index-->
+                    </li>
+                
+                    <li>
+                        <a class=" tab tab-questionnaires" href="#">Questionnaire</a>
+                    </li>
+
+                </ul>
+                <div class="content home active ">
+                    <a href="Index.html">home</a>
+                </div>
+
+                <div class="content questionnaires ">
+                    <a href="Questionnaire.html">Questionnaires</a>
+                    <a href="Formulaire.html">Inscription</a>
+                </div>
+            </nav>
+      
+        <button class="color-white button" id="button"> Light Mode ON/OFF </button>
+
+    </Header>
+    <Main>
+
+        <section class="bande align-items-center d-flex justify-content-center d-flex row-reverse" id="bandes">
+            <!-- section pour gérer le bandeau  et montrer le sujet  principale du site sur la bande-->
+            <!-- le bandeau est mis dans la section et paas dans une div car il correspond a la zone de la section-->
+            <!-- aligne-items-center et justify content center pour que le titre soit centré dans le bandeau -->
+            <h1 class="">Apprendre a jouer a Osu!</h1> <!-- h1 -> titre du site -->
+            <img src="Img/logo_osu.png" alt="logo osu" class="p-20" id="logo-osu">
+        </section>
+
+        <!--  Section avec 3 div, 1 div par categorie -->
+        <section class="d-flex justify-content-center">
+            <!-- on flex les div et on les centre au milieu de la page-->
+            <div id="mode-standard" class=" p-20  flex-column text-align-center">
+                <!-- flex les items en colonne , et on aligne les zone de texte au centre de la div-->
+                <a href="Page2.html"><img src="Img/STANDARD/standard.png" class="image-index alt="image logo osu standard"
+                        id="" ></a>
+
+                <h3 class="">Osu!Standard</h3>
+                <p class="">Le mode de jeu standard d'Osu!</p>
+            </div>
+
+            <div id="mode-mania" class=" p-20  flex-column text-align-center">
+                <a href="Page3.html"><img src="Img/MANIA/mania.png" class="image-index" alt="image logo osu mania" id=""
+                        ></a>
+                <!-- on met un lien et une balise image dedans pour que quand on clique sur l'image on soit directement dirigé vers la page -->
+                <h3 class="">Osu!Mania</h3>
+                <p class="">Le mode de jeu 'mania' d'Osu , avec une interface de mini piano</p>
+            </div>
+
+            <div id="universel" class=" p-20 flex-column text-align-center">
+                <a href="Page4.html"><img src="Img/rouage.png" class="image-index" alt="image engrenage" id="" ></a>
+                <h3 class="">Option Universel</h3>
+                <p class="">Les petits tips utiles pour le jeu, peu importe le mode</p>
+
+
+            </div>
+
+
+        </section>
+
+    </Main>
+    <Footer>
+
+        <section class="d-flex p-20 flex-column footer ">
+            <h4 class="m-20">Les liens utiles</h4>
+            <a class="color-white-grey m-20" href="https://osu.ppy.sh/home/download"> Download Osu!</a>
+            <!-- lien vers la page de Osu!-->
+            <a class="color-white-grey m-20" href="https://osu.ppy.sh/beatmapsets"> Chercher des beatmaps pour Osu!</a>
+
+        </section>
+
+
+    </Footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

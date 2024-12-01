@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Img/logo_osu.png" type="image/png">
+    <!--pour mettre le logo d'osu dans la barre avec le nom du site-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet"> <!-- link pour ajouter une font -->
+
+</head>
+
+<body class="m-20 libre-baskerville-regular font-size-x-large ">
+    <Header class="d-flex align-items-center header">
+        <nav> <!-- naviguation entre differentes pages du site-->
+            <ul class="d-flex align-items-center margin-top ">
+                <li>
+                    <a class="color-white tab tab-home tab-active " href="#">Home</a>
+                    <!-- lien entre l'index et l'index -> sert pas pour cette page mais quand l'utilisateur change de page il pourras l'utiliser pour revenir a l'index-->
+                </li>
+
+                <li>
+                    <a class="color-white  tab tab-questionnaires" href="#">Questionnaire</a>
+                </li>
+
+            </ul>
+            <div class="content home active ">
+                <a href="Index.html">home</a>
+            </div>
+
+            <div class="content questionnaires ">
+                <a href="Questionnaire.html">Questionnaires</a>
+
+                <a href="Formulaire.html">Inscription</a>
+            </div>
+        </nav>
+
+        <button class="color-white button" id="button"> Light Mode ON/OFF </button>
+
+    </Header>
+    <main>
+
+        <section class="bande align-items-center d-flex justify-content-center d-flex row-reverse" id="bandes">
+            <!-- section pour gérer le bandeau  et montrer le sujet  principale du site sur la bande-->
+            <!-- le bandeau est mis dans la section et paas dans une div car il correspond a la zone de la section-->
+            <!-- aligne-items-center et justify content center pour que le titre soit centré dans le bandeau -->
+            <h1 class="color-white">Formulaire d'inscription</h1> <!-- h1 -> titre du site -->
+            <img src="Img/logo_osu.png" alt="logo osu" class="p-20" id="logo-osu">
+        </section>
+
+        <form action="" id="form1">
+            <!-- création d'un formulaire qui renvoie ensuite sur une page qui remercie la personne d'avoir répondu-->
+            <div id="error-block">
+
+            </div>
+            <div>
+                <label for="name">Prenom</label>
+                <input type="text" name="name" id="name" placeholder="Votre Prenom">
+                <br>
+                <br>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Votre E-mail">
+                <br>
+                <br>
+
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" placeholder="Votre password">
+                <br><br>
+            </div>
+            <div>
+                <label for="password">Vérifiez votre mot de passe</label>
+                <input type="password" name="password2" id="password2" placeholder="Ré-écrivez votre password">
+                <br>
+                <br>
+            </div>
+            <div>
+                <label for="sexe">Votre sexe</label> <!-- checkbox-->
+                <input type="checkbox" name="sexe" id="sexe" value="sexe">Homme
+                <input type="checkbox" name="sexe" id="sexe" value="sexe">Femme
+                <input type="checkbox" name="sexe" id="sexe" value="sexe">Autre
+            </div>
+            <div>
+                <input type="submit" name="submit" id="submit">
+                <br>
+                <br>
+            </div>
+
+        </form>
+    </main>
+    <Footer>
+
+        <section class="d-flex p-20 flex-column color-white footer" id="bandes">
+            <h4 class="m-20">Les liens utiles</h4>
+            <a class="color-white-grey m-20" href="https://osu.ppy.sh/home/download"> Download Osu!</a>
+            <!-- lien vers la page de Osu! -->
+            <a class="color-white-grey m-20" href="https://osu.ppy.sh/beatmapsets"> Chercher des beatmaps pour Osu!</a>
+
+        </section>
+
+
+    </Footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
