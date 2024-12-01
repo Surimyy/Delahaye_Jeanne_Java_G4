@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Osu!Standard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="m-20 libre-baskerville-regular font-size-x-large">
+    <Header class="d-flex align-items-center header" >
+        <nav> <!-- naviguation entre differentes pages du site-->
+            <ul class="d-flex align-items-center margin-top ">
+                <li>
+                    <a class="color-white tab tab-home tab-active " href="#">Home</a>
+                    <!-- lien entre l'index et l'index -> sert pas pour cette page mais quand l'utilisateur change de page il pourras l'utiliser pour revenir a l'index-->
+                </li>
+            
+                <li>
+                    <a class="color-white  tab tab-questionnaires" href="#">Questionnaire</a>
+                </li>
+
+            </ul>
+            <div class="content home active ">
+                <a href="Index.html">home</a>
+            </div>
+
+            <div class="content questionnaires ">
+                <a href="Questionnaire.html">Questionnaires</a>
+                <a href="Formulaire.html">Inscription</a>
+            </div>
+        </nav>
+  
+    <button class="color-white button" id="button"> Light Mode ON/OFF </button>
+
+</Header>
+    <Main>
+        <section class="bande align-items-center d-flex justify-content-center d-flex row-reverse">
+            <h1 class="color-white">Osu! Standard</h1>
+            <img src="Img/logo_osu.png" alt="logo osu" class="p-20" id="logo-osu">
+        </section>
+        <!--Bandeau indiquant sur quel page on se trouve-->
+
+        <section class="d-flex flex-column gap-40">
+            <!-- flex de la section et on cré un ecart 'gap-40' de 4à pixel avec la prochaine section-->
+            <div class="d-flex flex-column gap-20" id="interface">
+                <p>
+                    Ce mode de jeu est celui par défaut <br><br> <!-- saut a la ligne -->
+                    Le but est simple , suivre les cercles au rythme de la musique <br><br>
+                    <span>L'interface se présente sous cette
+                        forme</span>><!-- on met a part cette zone de text pour ensuite la mettre en évidence grace au css-->
+                </p>
+                <img class="align-self-center" src="Img/Interface_osu.jpg" alt="image interface osu" id="image">
+                <p>
+                    En haut à gauche, c'est votre barre de vie <br><br>
+                    En haut à droite c'est votre score et juste en dessous votre précision <br><br>
+                    En bas à gauche, c'est votre combo, il sert à gagner plus de points <br><br><br>
+                </p>
+                <p>
+                    En bas, au milieu, quand on joue, on peut voir une barre, quand les petits traits sont à gauche,
+                    c'est
+                    que
+                    vous êtes trop rapide, et à l'inverse, s'ils sont à droite vous êtes trop lent
+                </p>
+
+                <img class="align-self-center" src="Img/STANDARD/accurency.PNG" alt="image interface osu" id="image">
+                <!-- on fait en sorte que seul l'image soit au centre de la page , et non pas toute la div-->
+
+            </div>
+            <div class="d-flex flex-column gap-20 ">
+                <p>
+                    <span> Les différents types de cercle </span><br><br>
+                    Le cercle simple :
+                </p>
+                <img src="Img/STANDARD/cercle.png" alt="image cercle simple" class="bg-grey-circle " id="cercle">
+                <!-- on met un fond gris foncé et avec des bord rond pour pouvori mieux voir l'image qui est moins visible sans cela -->
+                <p>Il suffit de cliquer 1 fois pour avoir les points <br><br>
+                    Le slider:</p>
+                <img src="Img/STANDARD/slider.png" alt="image d'un slider" class="bg-grey-circle " id="slider">
+                <p> Il faut maintenir le clic du début à la fin du slider<br><br>
+                    <span>ATTENTION</span> Les cercles simples et les slider peuvent rapporter 0; 50; 100; 200 ou 300,
+                    en
+                    fonction de la précision du joueur <br><br>
+                    si le joueur a 0, le combo reset
+                    <br><br>
+                    Le spinner:
+                </p>
+                <img src="Img/STANDARD/spinner.png" alt="image spinner" class="bg-grey-circle " id="cercle">
+                <p> Il faut maintenir le clic et faire tourner le spinner le plus vite possible pour obtenir le plus
+                    de
+                    points</p>
+            </div>
+
+            <div class="d-flex flex-column gap-20" id="gameplay">
+                <p> A partir du niveau de difficulté '3 étoiles' on peut commencer à voir des patterns de gameplay se
+                    répéter
+                    <br><br>
+                    <span>Les streams :</span>
+                </p>
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/IED0u8Htzp4" title="Stream-Osu"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="align-self-center"></iframe>
+                <!-- lien vers une video youtube (en non répertorié) pour montré a quoi peux ressemblé une max de stream-->
+                <p><span>Les Jumps :</span></p>
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/NFVd5tQHmE8" title="Jump-Osu"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="align-self-center"></iframe>
+
+            </div>
+        </section>
+
+        <section class="d-flex flex-column gap-20" id="tips-standard">
+            <p>
+                <span>Les petits tips pour le mode de jeu: </span><br><br>
+                <span> 1</span>
+                <br><br>
+                Le jeu de base est paramétré pour jouer en utilisant le clic de la souris
+                il est donc conseillé de désactiver le clic de la souris, et de paramétrer 2 touches clavier que vous
+                souhaitez utiliser
+            </p>
+            <img src="Img/STANDARD/Binding.PNG" alt="image option de binding osu" id="image">
+            <p>
+                <span>2</span>
+                <br><br>
+                Il est aussi conseillé de régler la sensibilité de la souris, en fonction de la difficulté il faut
+                adapter la sensibilité, mais pour commencer à jouer au jeu je recommande de jouer avec une sensibilité
+                basse, 800 ou 1000 de dpi sur la souris et entre 0,8 et 1 de sensibilité dans les paramètres du jeu
+            </p>
+
+            <img src="Img/STANDARD/sensi-1.PNG" alt="image parametre sensibilité dans le jeu" id="image">
+            <p>
+                <span>3</span>
+                <br><br>
+                Toujours lié à la souris, il est conseillé de désactiver l'amélioration de la précision du pointeur dans
+                les paramètres de la souris
+            </p>
+            <img src="Img/STANDARD/sensi-2.PNG" alt="image option supplémentaire de souris" id="image">
+
+
+
+        </section>
+
+    </Main>
+    <Footer>
+
+        <section class="d-flex p-20 flex-column color-white footer ">
+            <h4 class="m-20">Les liens utiles</h4>
+            <a class="color-white-grey m-20" href="https://osu.ppy.sh/home/download"> Download Osu!</a>
+            <!-- lien vers la page de Osu!-->
+            <a class="color-white-grey m-20" href="https://osu.ppy.sh/beatmapsets"> Chercher des beatmaps pour Osu!</a>
+
+        </section>
+
+
+    </Footer>
+    <script src="main.js"></script>
+
+
+
+</body>
+
+</html>
